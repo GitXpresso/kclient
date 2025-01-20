@@ -1,11 +1,9 @@
 // LinuxServer KasmVNC Client
-
 //// Env variables ////
-var CUSTOM_USER = process.env.CUSTOM_USER || 'abc';
-var PASSWORD = process.env.PASSWORD || 'abc';
+
 var SUBFOLDER = process.env.SUBFOLDER || '/';
 var TITLE = process.env.TITLE || 'KasmVNC Client';
-var FM_HOME = process.env.FM_HOME || '/config';
+var FM_HOME = process.env.FM_HOME || '/home';
 var PATH;
 if (SUBFOLDER != '/') {
   PATH = '&path=' + SUBFOLDER.substring(1) + 'websockify'
